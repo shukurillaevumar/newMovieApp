@@ -180,7 +180,9 @@ form .btnSubmit:hover {
     width: 350px;
   }
 
+
   .footer span {
+    font-size: 15px;
     padding: 20px;
   }
   
