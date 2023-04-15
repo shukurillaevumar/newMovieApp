@@ -1,0 +1,190 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(31, 27, 27);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container form {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+form input {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: large;
+}
+
+form .btnSubmit {
+  padding: 10px;
+  border: transparent;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: large;
+  color: grey;
+  background-color: transparent;
+  border: 1px solid orange;
+}
+
+form .btnSubmit:hover {
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.bannerImg {
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+}
+
+.bannerMovieInformation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  bottom: 10%;
+  margin-left: 10px;
+}
+
+.bannerMovieName, .bannerMovieRelease, .bannerMovieRating, .movieLang, .filmName, .filmOverview {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.result .card {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card .resultImg {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card .groupElement {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btnShow {
+  background-color: black;
+  color: white;
+  padding: 10px 30px; 
+  border-radius: 12px;
+  font-size: large;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top: 100px;
+}
+
+.footer span {
+  font-size: larger;
+  color: white;
+  padding: 30px;
+}
+@media screen and (max-width: 900px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bannerImg {
+    width: 350px;
+    object-fit: cover;
+  }
+
+  .bannerMovieInformation {
+    position: absolute;
+    top: 670px;
+  }
+
+  .container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card .resultImg {
+    width: 350px;
+  }
+
+  .footer span {
+    padding: 20px;
+  }
+  
+  .groupElement {
+    width: 100vw;
+  }
+}
